@@ -1,0 +1,242 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    </head>
+        <body>
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#"><img src="img/ca_logo.png"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Buyers Guide<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                </ul>
+                  <ul class = "navbar-nav ml-auto">
+                      <li class="nav-link">
+                          <a class= "nav-link" href="#">LOG IN</a>
+                      </li>
+                      <li class="nav-link">
+                        <a class="nav-item" onclick = "searchClick()" href="#"><span class="glyphicon glyphicon-search"></span></a>
+
+                      </li>
+                      <li class="nav-link">
+                          <button class="btn1 btn-outline-success my-2 my-sm-0" type="submit">WRITE A REVIEW</button>
+                      </li>
+                  </ul>
+              </div>
+            </nav>
+            <div class="container-fluid" style="margin-top:15px;">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="row">
+                            <div class="matchingtool">
+                                <div class="mttext">
+                                    <h1 class="mt">What brands are right for me?</h1>
+                                </div>
+                                <div class="mtbtn">
+                                    <button class="btn2">Get Matched!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class ="row">
+                            <div class="todo">
+                                <h2 class="text-center">To-Do List</h2>
+                                <div class="row">
+                                    <div class="list listpad">
+                                        <ul style="font-size:15px">
+                                            <li>Find the perfect car</li>
+                                            <li>Find a rewards credit card</li>
+                                            <li>Find auto insurance savings</li>
+                                            <li>Set yearly budget</li>
+                                            <li>Look at investment options</li>
+                                            <li>Set a plan to raise credit score</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="addremove">
+                                        <input type="text"><button class="btn">Add</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                         <div class= "row">
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <h1>Financial Independence Dashboard</h1>
+                                </div>
+                                <div class="row">
+                                    <div class="categories">
+                                        <h2>Categories</h2>
+                                        <div class="row top-buffer">
+                                            <div class="col-sm-3">
+                                                <a href="#" class="custom-card">
+                                                    <div class="card" style="width: 16rem; height: 15rem;">
+                                                        <img class="card-img-top" alt="Card header image"
+                                                             src="css/img/car_insurance.png">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Insurance</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <a href="#" class="custom-card">
+                                                    <div class="card" style="width: 16rem; height: 15rem;">
+                                                        <img class="card-img-top" alt="Card header image"
+                                                             src="css/img/Credit_Cards.png">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Credit Report</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <a href="#" class="custom-card">
+                                                    <div class="card" style="width: 16rem; height: 15rem;">
+                                                        <img class="card-img-top" alt="Card header image"
+                                                             src="css/img/investing.png">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Investing</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <a href="#" class="custom-card">
+                                                    <div class="card" style="width: 16rem; height: 15rem;">
+                                                        <img class="card-img-top" alt="Card header image"
+                                                             src="css/img/buycar.png">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Buying a Car</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row top-buffer">
+                                            <div class="col-sm-3">
+                                                <a href="#" class="custom-card">
+                                                    <div class="card" style="width: 16rem; height: 15rem;">
+                                                        <img class="card-img-top" alt="Card header image"
+                                                             src="css/img/mealplan.png">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Meal Planning</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <a href="#" class="custom-card">
+                                                    <div class="card" style="width: 16rem; height: 15rem;">
+                                                        <img class="card-img-top" alt="Card header image"
+                                                             src="css/img/budget.png">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Budgeting</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <a href="#" class="custom-card">
+                                                    <div class="card" style="width: 16rem; height: 15rem;">
+                                                        <img class="card-img-top" alt="Card header image"
+                                                             src="css/img/transportation2.png">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Transportation</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="dailytip">
+                                    <h2>Tip of the day:</h2>
+                                    "A budget is telling your money where to go, instead of wondering where it went." - Dave Ramsey
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row row-whith-wide-cards">
+                            <div class = "topitems">
+                                <h2>Top Items</h2>
+                                    <div class="row top-buffer">
+                                        <div class="col-sm-2">
+                                            <a href="#" class="custom-card">
+                                                <div class="card" style="width: 12rem; height: 12rem;">
+                                                    <img class="card-img-top" alt="Card header image"
+                                                         src="css/img/mattress.png">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Sleep</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="#" class="custom-card">
+                                                <div class="card" style="width: 12rem; height: 12rem;">
+                                                    <img class="card-img-top" alt="Card header image"
+                                                         src="css/img/Home%20_Services.png">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Home Services</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="#" class="custom-card">
+                                                <div class="card" style="width: 12rem; height: 12rem;">
+                                                    <img class="card-img-top" alt="Card header image"
+                                                         src="css/img/home_warranties.png">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Home Warranty</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="#" class="custom-card">
+                                                <div class="card" style="width: 12rem; height: 12rem;">
+                                                    <img class="card-img-top" alt="Card header image"
+                                                         src="css/img/home_warranties.png">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Home Warranty</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                         <div class ="row">
+                            <div class = "saveditems">
+                                <h2>Saved Items</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 </div>
+        </div>
+        </body>
+
+</html>
+
+<script>
+    function searchClick() {
+        alert("You pressed search!")
+    }
+</script>
