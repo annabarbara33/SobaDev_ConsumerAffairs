@@ -1,0 +1,8 @@
+body, html {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #EAF6FA;
+
+}
