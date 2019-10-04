@@ -1,0 +1,57 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 55px auto 40px; /*150px repeat(12,1fr) 40px;*/
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "m m c c c c c c c c d d"
+        "t t c c c c c c c c d d"
+        "t t i i i i i i i i i i"
+        "t t s s s s s s s s s s"
+        "f f f f f f f f f f f f"
+}
+
+
+.todo {
+    grid-area: t;
+    /*grid-row: 5 / 16;*/
+    /*grid-column: 1 / 3;*/
+}
+
+.categories {
+    grid-area: c;
+    /*grid-column: 3 / 10;*/
+    /*grid-row: 2 / 8;*/
+}
+
+.topitems {
+    grid-area: i;
+    /*grid-row: 8 / 12 ;*/
+    /*grid-column: 3 / 11;*/
+}
+
+.saveditems {
+    grid-area: s;
+    /*grid-row: 12 / 16;*/
+    /*grid-column: 3 / 11;*/
+}
+
+.dailytip {
+    grid-area: d;
+    /*grid-row: 2 / 8;*/
+    /*grid-column: 10 / 13;*/
+}
+
+.matchingtool {
+    grid-area: m;
+    /*grid-column: 1 / 3;*/
+    /*grid-row: 2 / 5;*/
+}
+
+.footer {
+    grid-area: f;
+    /*grid-column: 1 / -1;*/
+    /*row-column: 14 / 15;*/
+}
