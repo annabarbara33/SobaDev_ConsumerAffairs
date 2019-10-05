@@ -8,10 +8,10 @@ function myFunction1() {
 
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
-    text.style.display = "block";
-    array.push(text);
+  //  text.style.display = "block";
+    array.push("Home");
   } else {
-    text.style.display = "none";
+ //   text.style.display = "none";
     array.pop();
   }
 }
@@ -24,10 +24,10 @@ function myFunction2() {
 
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
-    text.style.display = "block";
-    array.push(text);
+   // text.style.display = "block";
+    array.push("Car");
   } else {
-    text.style.display = "none";
+ //   text.style.display = "none";
     array.pop();
   }
 }
@@ -40,10 +40,10 @@ function myFunction3() {
 
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
-    text.style.display = "block";
-    array.push(text);
+   // text.style.display = "block";
+    array.push("Loan");
   } else {
-    text.style.display = "none";
+    //text.style.display = "none";
     array.pop();
   }
 }
@@ -56,10 +56,10 @@ function myFunction4() {
 
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
-    text.style.display = "block";
-    array.push(text);
+   // text.style.display = "block";
+    array.push("Other");
   } else {
-    text.style.display = "none";
+   // text.style.display = "none";
     array.pop();
   }
 }
@@ -69,7 +69,7 @@ function myFunction5() {
   var text = mySelect.options[mySelect.selectedIndex].text;
   array.push(text);
   //alert(array.toString());
-    alert(text);
+  //   alert(text);
 
 }
 function myFunction6() {
@@ -78,18 +78,20 @@ function myFunction6() {
   var text = mySelect.options[mySelect.selectedIndex].text;
   array.push(text);
   //alert(array.toString());
-    alert(text);
+  //   alert(text);
 
 }
 function myFunction7() {
     var first = document.getElementById("zipcodebox").value;
     array.push(first);
-    alert(first);
+    // alert(first);
 }
 function myFunction8() {
     //
     // alert("hhhhhhh");
     // array.push("123");
     //  array.push("456");
-    alert(array.toString());
+
+    document.getElementById("p3").innerHTML = array;
 }
+

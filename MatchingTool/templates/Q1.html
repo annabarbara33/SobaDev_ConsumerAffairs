@@ -79,6 +79,7 @@
     </nav>
   </header>
 
+<div Id="question1" style="display:block">
 <div class="progress">
   <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
@@ -108,37 +109,232 @@
   <label class="custom-control-label" for="customCheck4">Not Sure/ Other</label>
 
 </div>
+    <button type="button" onclick="myFunction1to2()"class="btn btn-primary btn-lg" >Continue</button>
+</div>
 
 
 
 
-<button type="button" onclick="location.href='/Q2'"class="btn btn-primary btn-lg" >Continue</button>
 
 
-<div class="questionflow__opts-wpr">
-                <div class="js-checkbox-opts questionflow__options questionflow__opts--col"><label class="btn questionflow__opt opt--selected">
-                <input class="js-checkbox" type="checkbox" value="house" name="why_repair">
-                <div class="opt__ttl-wpr"><div class="opt__img-ctnr"><img src="/media/home.png"></div></div>
-                <span>Buying A Home</span>
-            </label><label class="btn questionflow__opt">
-                <input class="js-checkbox" type="checkbox" value="car" name="why_repair">
-                <div class="opt__ttl-wpr"><div class="opt__img-ctnr"><img src="/media/car.png"></div></div>
-                <span>Buying A Car</span>
-            </label><label class="btn questionflow__opt">
-                <input class="js-checkbox" type="checkbox" value="loan" name="why_repair">
-                <div class="opt__ttl-wpr"><div class="opt__img-ctnr"><img src="/media/loan.png"></div></div>
-                <span>Refinancing A Loan</span>
-            </label><label class="btn questionflow__opt">
-                <input class="js-checkbox" type="checkbox" value="other" name="why_repair">
-                <div class="opt__ttl-wpr"><div class="opt__img-ctnr"><img src="/media/not_sure.png"></div></div>
-                <span>Not Sure / Other</span>
-            </label></div>
-                <p class="js-notes questionflow__notes"></p>
-            </div>
+{#<p id="text1" style="display:none">Checkbox1 is CHECKED!</p>#}
+{#<p id="text2" style="display:none">Checkbox2 is CHECKED!</p>#}
+{#<p id="text3" style="display:none">Checkbox3 is CHECKED!</p>#}
+{#<p id="text4" style="display:none">Checkbox4 is CHECKED!</p>#}
 
-<p id="text1" style="display:none">Checkbox1 is CHECKED!</p>
-<p id="text2" style="display:none">Checkbox2 is CHECKED!</p>
-<p id="text3" style="display:none">Checkbox3 is CHECKED!</p>
-<p id="text4" style="display:none">Checkbox4 is CHECKED!</p>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div Id="question2" style="display:none">
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<h2 class="js-form-title js-title questionflow__title" style="box-sizing: border-box; line-height: 1.2; font-size: 2rem; position: relative; z-index: 1; text-align: left; font-weight: 700; margin: 0px; width: 511.188px; color: rgb(0, 0, 0); padding-top: 2rem; padding-bottom: 0px; font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">Get Help Repairing Your Credit in 2019!</h2>
+<p class="js-title-description questionflow__title-dsc" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: 400; font-size: 1.5rem; text-align: left; width: 511.188px; margin-top: 2rem; margin-bottom: 1rem; font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">What is your credit score?</p>
+<div class="js-form-group js-form-checkbox questionflow__checkbox-group" style="box-sizing: border-box; width: 511.188px; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+  <!--<p class="js-title js-checkbox-title questionflow__chkbx-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px 0px; text-align: center; color: rgb(149, 149, 149); font-weight: 400; font-size: 1.5rem;">Select all that apply</p>-->
+</div>
+
+<select class="select" id="selectScore" name="credit_score" data-type="string" data-group="" required="" >
+    <option value="">Select your score...</option>
+    <option value="poor"  >300-579 Needs Work</option>
+    <option value="fair"  >580-669 Fair</option>
+    <option value="good " >670-739 Good</option>
+    <option value="excellent" >740-850 Excellent</option>
+    <option value="not_sure"  >Not Sure</option>
+</select>
+
+{#<button type="button" onclick="myFunction5()"class="btn btn-primary btn-lg" >check</button>#}
+
+<button type="button" onclick="myFunction2to3() , myFunction5()"class="btn btn-primary btn-lg" >Continue</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div Id="question3" style="display:none">
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<h2 class="js-form-title js-title questionflow__title" style="box-sizing: border-box; line-height: 1.2; font-size: 2rem; position: relative; z-index: 1; text-align: left; font-weight: 700; margin: 0px; width: 511.188px; color: rgb(0, 0, 0); padding-top: 2rem; padding-bottom: 0px; font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">Get Help Repairing Your Credit in 2019!</h2>
+<p class="js-title-description questionflow__title-dsc" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: 400; font-size: 1.5rem; text-align: left; width: 511.188px; margin-top: 2rem; margin-bottom: 1rem; font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">How many negative items are on your credit score?</p>
+<div class="js-form-group js-form-checkbox questionflow__checkbox-group" style="box-sizing: border-box; width: 511.188px; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+  <p class="js-title js-checkbox-title questionflow__chkbx-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px 0px; text-align: center; color: rgb(149, 149, 149); font-weight: 400; font-size: 1.5rem;">This may include delinquent accounts, collections, foreclosures, tax liens, and other items that negatively impact your credit history.</p>
+    <select class="select" name="report_items" data-type="string" data-group="" required="">
+                    <option value="">My credit report shows...</option>
+                    <option value="zero">0 Items</option>
+                    <option value="five">1 - 5 Items</option>
+                    <option value="ten">6 - 10 Items</option>
+                    <option value="more">More than 10 Items</option>
+                    <option value="not_sure">Not Sure</option>
+    </select>
+
+
+{#    <button type="button" onclick="myFunction6()"class="btn btn-primary btn-lg" >check</button>#}
+<button type="button" onclick="myFunction3to4(), myFunction6()"class="btn btn-primary btn-lg" >Continue</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+    <div Id="question4" style="display:none">
+    <div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<h2 class="js-form-title js-title questionflow__title" style="box-sizing: border-box; line-height: 1.2; font-size: 2rem; position: relative; z-index: 1; text-align: left; font-weight: 700; margin: 0px; width: 511.188px; color: rgb(0, 0, 0); padding-top: 2rem; padding-bottom: 0px; font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">Get Help Repairing Your Credit in 2019!</h2>
+<p class="js-title-description questionflow__title-dsc" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: 400; font-size: 1.5rem; text-align: left; width: 511.188px; margin-top: 2rem; margin-bottom: 1rem; font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">What is your Zip Code?</p>
+<div class="js-form-group js-form-checkbox questionflow__checkbox-group" style="box-sizing: border-box; width: 511.188px; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+  <!--<p class="js-title js-checkbox-title questionflow__chkbx-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px 0px; text-align: center; color: rgb(149, 149, 149); font-weight: 400; font-size: 1.5rem;">Select all that apply</p>-->
+</div>
+
+<!--<input class="zip-group__input js-input js-zip-type js-geo-prefilled js-valid-zip" type="text" name="zip" value="Zip Code" data-type="string" data-group="" placeholder="" required="" minlength="">-->
+<input type="text" name="textbox1" value="ZIP CODE" id="zipcodebox" />
+
+{#<button type="button" onclick="myFunction7()"class="btn btn-primary btn-lg" >check</button>#}
+<button type="button" onclick="myFunction4toR(), myFunction7(), myFunction8()" class="btn btn-primary btn-lg" >Continue</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<div Id="result" style="display:none">
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<h2 class="js-form-title js-title questionflow__title" style="box-sizing: border-box; line-height: 1.2; font-size: 2rem; position: relative; z-index: 1; text-align: left; font-weight: 700; margin: 0px; width: 511.188px; color: rgb(0, 0, 0); padding-top: 2rem; padding-bottom: 0px; font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">Get Help Repairing Your Credit in 2019!</h2>
+<p class="js-title-description questionflow__title-dsc" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: 400; font-size: 1.5rem; text-align: left; width: 511.188px; margin-top: 2rem; margin-bottom: 1rem; font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">You've been matched!</p>
+<div class="js-form-group js-form-checkbox questionflow__checkbox-group" style="box-sizing: border-box; width: 511.188px; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+  <p id="p3" class="js-title js-checkbox-title questionflow__chkbx-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px 0px; text-align: center; color: rgb(149, 149, 149); font-weight: 400; font-size: 1.5rem;"> based on your situation we found 3 out of 53 companies are best for you!</p>
+      <p class="js-title js-checkbox-title questionflow__chkbx-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px 0px; text-align: center; color: rgb(149, 149, 149); font-weight: 400; font-size: 1.5rem;"> based on your situation we found 3 out of 53 companies are best for you!</p>
+
+</div>
+
+  <div id="target-id"></div>
+
+
+
+<form>
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+</form>
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput"></label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Phone Number">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2"></label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+  </div>
+</form>
+
+
+{#<button type="button" onclick="myFunction8()"class="btn btn-primary btn-lg" >check</button>#}
+<button type="button" onclick="location.href='/'"class="btn btn-primary btn-lg" >Check Result</button>
+</div>
+ <p id="p3"></p>
 </html>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+function myFunction1to2() {
+
+
+  var question1 = document.getElementById("question1");
+  var question2 = document.getElementById("question2");
+
+  question1.style.display ="none";
+  question2.style.display ="block";
+
+}
+function remove() {
+
+
+  var question1 = document.getElementById("question1");
+  question1.style.display ="none";
+
+}
+function myFunction2to3() {
+
+
+  var question2 = document.getElementById("question2");
+  var question3 = document.getElementById("question3");
+
+  question2.style.display ="none";
+  question3.style.display ="block";
+
+}
+function myFunction3to4() {
+
+
+  var question3 = document.getElementById("question3");
+  var question4 = document.getElementById("question4");
+
+  question3.style.display ="none";
+  question4.style.display ="block";
+
+}
+function myFunction4toR() {
+
+
+  var question4 = document.getElementById("question4");
+  var result = document.getElementById("result");
+
+  question4.style.display ="none";
+  result.style.display ="block";
+
+}
+</script>
