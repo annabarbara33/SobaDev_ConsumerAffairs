@@ -1,4 +1,5 @@
-var array = [];
+var array1 = [];
+var array2 = [];
 
 function myFunction1() {
   // Get the checkbox
@@ -9,7 +10,7 @@ function myFunction1() {
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
   //  text.style.display = "block";
-    array.push("Home");
+    array1.push("Home");
   } else {
  //   text.style.display = "none";
     array.pop();
@@ -25,7 +26,7 @@ function myFunction2() {
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
    // text.style.display = "block";
-    array.push("Car");
+    array1.push("Car");
   } else {
  //   text.style.display = "none";
     array.pop();
@@ -41,7 +42,7 @@ function myFunction3() {
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
    // text.style.display = "block";
-    array.push("Loan");
+    array1.push("Loan");
   } else {
     //text.style.display = "none";
     array.pop();
@@ -57,7 +58,7 @@ function myFunction4() {
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
    // text.style.display = "block";
-    array.push("Other");
+    array1.push("Other");
   } else {
    // text.style.display = "none";
     array.pop();
@@ -66,8 +67,8 @@ function myFunction4() {
 function myFunction5() {
   // Get the checkbox
   mySelect = document.getElementsByName('credit_score')[0];
-  var text = mySelect.options[mySelect.selectedIndex].text;
-  array.push(text);
+  var text = mySelect.options[mySelect.selectedIndex].value;
+  array2.push(text);
   //alert(array.toString());
   //   alert(text);
 
@@ -76,14 +77,14 @@ function myFunction6() {
   // Get the checkbox
   mySelect = document.getElementsByName('report_items')[0];
   var text = mySelect.options[mySelect.selectedIndex].text;
-  array.push(text);
+  array2.push(text);
   //alert(array.toString());
   //   alert(text);
 
 }
 function myFunction7() {
     var first = document.getElementById("zipcodebox").value;
-    array.push(first);
+    array2.push(first);
     // alert(first);
 }
 function myFunction8() {
@@ -91,7 +92,10 @@ function myFunction8() {
     // alert("hhhhhhh");
     // array.push("123");
     //  array.push("456");
+    var output = "Because you are looking for ".concat(array1, ", and have a ", array2[0],
+        " credit score, we have found a company that is best for you near your zip code:  ", array2[2], ".");
 
-    document.getElementById("p3").innerHTML = array;
+
+    document.getElementById("p3").innerHTML = output;
 }
 
