@@ -13,8 +13,13 @@ def index():
 @app.route('/Q1')
 def get_Q1():
     return render_template('Q1.html', )
+@app.route('/Q2')
+def get_Q2():
+    return render_template('Q2.html', )
 
-
+@app.route('/result')
+def get_result():
+    return render_template('result.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -10,7 +10,7 @@ function myFunction1() {
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
   //  text.style.display = "block";
-    array1.push("Home");
+    array1.push("a home ");
   } else {
  //   text.style.display = "none";
     array.pop();
@@ -26,7 +26,7 @@ function myFunction2() {
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
    // text.style.display = "block";
-    array1.push("Car");
+    array1.push("a car ");
   } else {
  //   text.style.display = "none";
     array.pop();
@@ -42,7 +42,7 @@ function myFunction3() {
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
    // text.style.display = "block";
-    array1.push("Loan");
+    array1.push("a loan ");
   } else {
     //text.style.display = "none";
     array.pop();
@@ -58,7 +58,7 @@ function myFunction4() {
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
    // text.style.display = "block";
-    array1.push("Other");
+    array1.push("other");
   } else {
    // text.style.display = "none";
     array.pop();
@@ -92,8 +92,8 @@ function myFunction8() {
     // alert("hhhhhhh");
     // array.push("123");
     //  array.push("456");
-    var output = "Because you are looking for ".concat(array1, ", and have a ", array2[0],
-        " credit score, we have found a company that is best for you near your zip code:  ", array2[2], ".");
+    var output = "Because you are looking for ".concat(array1, "and have a ", array2[0],
+        " credit score, we have found a company that is best for you near your area.");
 
 
     document.getElementById("p3").innerHTML = output;

@@ -10,9 +10,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
-    <link href="css/todo_app.css">
-    <link href="font-awesome.css">
-        <link href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web">
     </head>
         <body>
@@ -56,7 +53,7 @@
                                         Get Matched!<span class="caret"></span>
                                       </button>
                                       <ul class="dropdown-menu dropdown-menu-right" style="font-size:14px;">
-                                          <li><a href="#">Credit Repair</a></li>
+                                          <li><a href="http://127.0.0.1:5000/Q1">Credit Repair</a></li>
                                         <li><a href="#">Car Finder</a></li>
                                         <li><a href="#">Car Insurance</a></li>
                                       </ul>
@@ -77,6 +74,24 @@
                                                   <a onclick="deleteSelf(this)"><span id="1b" style="float:right" class="pull-right glyphicon glyphicon-trash" aria-hidden="true"></span></a>
                                                   <script>document.getElementById("1").addEventListener("click", function() {
                                                       changeChecked("1");});</script>
+                                              </li>
+                                                <li class="list-group-item todo-li">
+                                                  <a><i id="2" class="glyphicon glyphicon-unchecked"></i></a><span>Get a Rewards Credit Card</span>
+                                                  <a onclick="deleteSelf(this)"><span id="1b" style="float:right" class="pull-right glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                                                  <script>document.getElementById("2").addEventListener("click", function() {
+                                                      changeChecked("2");});</script>
+                                              </li>
+                                                <li class="list-group-item todo-li">
+                                                  <a><i id="3" class="glyphicon glyphicon-unchecked"></i></a><span>Set a Budget</span>
+                                                  <a onclick="deleteSelf(this)"><span id="1b" style="float:right" class="pull-right glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                                                  <script>document.getElementById("3").addEventListener("click", function() {
+                                                      changeChecked("3");});</script>
+                                              </li>
+                                                <li class="list-group-item todo-li">
+                                                  <a><i id="4" class="glyphicon glyphicon-unchecked"></i></a><span>Check Insurance Savings</span>
+                                                  <a onclick="deleteSelf(this)"><span id="1b" style="float:right" class="pull-right glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                                                  <script>document.getElementById("4").addEventListener("click", function() {
+                                                      changeChecked("4");});</script>
                                               </li>
                                             </ul>
                                         </div>
@@ -245,7 +260,7 @@
                         </div>
                          <div class ="row">
                             <div class = "saveditems">
-                                <h2>News</h2>
+                                <h2></h2>
                             </div>
                         </div>
                     </div>
