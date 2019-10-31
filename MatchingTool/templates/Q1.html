@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+                <link rel="stylesheet" href="{{ url_for('static', filename='css/temp.css') }}">
+
       <!--<script src="{{url_for('static',filename='js/JavaScript.js')}}"></script>-->
 <script src="{{url_for('static',filename='js/script.js')}}"></script>
   <title>ConsumerAffairs.com/</title>
@@ -232,46 +234,44 @@
     >
     <div style="width:1000px; margin:0 auto;" >
 <h2 class="js-form-title js-title questionflow__title" style="box-sizing: border-box; line-height: 1.2; font-size: 2rem; position: relative; z-index: 1; text-align: left; font-weight: 700; margin: 0px; width: 511.188px; color: rgb(0, 0, 0); padding-top: 2rem; padding-bottom: 0px; font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">Get Help Repairing Your Credit in 2019!</h2>
-<p class="js-title-description questionflow__title-dsc" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: 400; font-size: 1.5rem; text-align: left; width: 511.188px; margin-top: 2rem; margin-bottom: 1rem; font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">You've been matched!</p>
+<p class="js-title-description questionflow__title-dsc" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: 400; font-size: 1.5rem; text-align: left; width: 511.188px; margin-top: 2rem; margin-bottom: 1rem; font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">You've been matched! <img src ="static/img/blurry.png" style="margin-left: 35px" width="200" height="100">
 <div class="js-form-group js-form-checkbox questionflow__checkbox-group" style="box-sizing: border-box; width: 511.188px; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-  <p id="p3" class="js-title js-checkbox-title questionflow__chkbx-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px 0px; text-align: left; color: rgb(149, 149, 149); font-weight: 400; font-size: 1.3rem;"> based on your situation we found 3 out of 53 companies are best for you!</p>
-      <p class="js-title js-checkbox-title questionflow__chkbx-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px 0px; text-align: center; color: rgb(149, 149, 149); font-weight: 400; font-size: 0.5rem;"> By clicking the button “SHOW ME MY MATCH”, I agree ConsumerAffairs and/or the Brand I am matched with can communicate with me by email, text or phone only at the number I have provided, including through automated and/or pre-recorded calls and texts, even if it's a wireless number or if you have registered with a Do Not Call list. Msg & data rates may apply. I understand that any business conducted is between myself and the Brand I am matched with and that I am not required to make any purchase as a condition of submitting this form. I also agree to the ConsumerAffairs Terms of Use and Privacy Policy, including the use of an electronic record of this agreement.</p>
+  <p id="p3" class="js-title js-checkbox-title questionflow__chkbx-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px 0px; text-align: left; font-weight: 400; font-size: 1.3rem;"> This company helped 97% of their customers reapir their credit score! </p>
+<p></p>
+        <div  style = "text-align: center; margin-bottom: 15px" >
+            <!--<a class=“login-trigger” href=“#” data-target=“#login” data-toggle=“modal”>Login</a> -->
+           <button type="button" onclick="openForm()" class="btn btn-primary btn-lg" >SHOW ME MY MATCH</button>
+
+<!-- <button type="button" onclick="location.href='/result'"class="btn btn-primary btn-lg" >SHOW ME MATCH</button> -->
+        </div>
+      <p class="js-title js-checkbox-title questionflow__chkbx-ttl" style="box-sizing: border-box; margin-top: 0px; padding: 10px 0px; color: rgb(149, 149, 149); font-weight: 400; font-size: 0.5rem;"> By clicking the button “SHOW ME MY MATCH”, I agree ConsumerAffairs and/or the Brand I am matched with can communicate with me by email, text or phone only at the number I have provided, including through automated and/or pre-recorded calls and texts, even if it's a wireless number or if you have registered with a Do Not Call list. Msg & data rates may apply. I understand that any business conducted is between myself and the Brand I am matched with and that I am not required to make any purchase as a condition of submitting this form. I also agree to the ConsumerAffairs Terms of Use and Privacy Policy, including the use of an electronic record of this agreement.</p>
 
 </div>
 
   <div id="target-id"></div>
 
 
-{##}
-{#<form>#}
-{#  <div class="form-row">#}
-{#    <div class="col">#}
-{#      <input type="text" class="form-control" placeholder="First name">#}
-{#    </div>#}
-{#    <div class="col">#}
-{#      <input type="text" class="form-control" placeholder="Last name">#}
-{#    </div>#}
-{#  </div>#}
-{#</form>#}
-{#<form>#}
-{#  <div class="form-group">#}
-{#    <label for="formGroupExampleInput"></label>#}
-{#    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Phone Number">#}
-{#  </div>#}
-{#  <div class="form-group">#}
-{#    <label for="formGroupExampleInput2"></label>#}
-{#    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">#}
-{#  </div>#}
-{#</form>#}
 
 
-{#<button type="button" onclick="myFunction8()"class="btn btn-primary btn-lg" >check</button>#}
-        <p></p>
-<button type="button" onclick="location.href='/result'"class="btn btn-primary btn-lg" >Make an Account</button>
-</div>
+
  <p id="p3"></p>
 </div>
+<div class="form-popup" id="myForm" style="display:none">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
 </html>
+
 
 
 
@@ -330,5 +330,12 @@ function myFunction4toR() {
   question4.style.display ="none";
   result.style.display ="block";
 
+}
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
 }
 </script>

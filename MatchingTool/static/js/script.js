@@ -92,8 +92,10 @@ function myFunction8() {
     // alert("hhhhhhh");
     // array.push("123");
     //  array.push("456");
-    var output = "Because you are looking for ".concat(array1, "and have a ", array2[0],
-        " credit score, we have found a company that is best for you near your area.");
+    var output = "This company helped 97% of their customers repair their credit score!";
+
+       // var output = "Because you are looking for ".concat(array1, "and have a ", array2[0],
+       //  " credit score, we have found a company that is best for you near your area.");
 
 
     document.getElementById("p3").innerHTML = output;
