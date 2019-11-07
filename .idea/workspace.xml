@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f2669ca-b999-40d3-b138-fba69fbcb8e1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/MatchingTool/static/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchingTool/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/MatchingTool/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MatchingTool/static/css/temp.css" beforeDir="false" afterPath="$PROJECT_DIR$/MatchingTool/static/css/temp.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MatchingTool/templates/Q1.html" beforeDir="false" afterPath="$PROJECT_DIR$/MatchingTool/templates/Q1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MatchingTool/templates/Q2.html" beforeDir="false" afterPath="$PROJECT_DIR$/MatchingTool/templates/Q2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MatchingTool/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MatchingTool/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,11 +34,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Q1.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Q1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MatchingTool/templates/Q1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4125">
-              <caret line="275" column="37" selection-start-line="275" selection-start-column="12" selection-end-line="275" selection-end-column="37" />
+            <state relative-caret-position="152">
+              <caret line="213" column="22" selection-start-line="213" selection-start-column="22" selection-end-line="213" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#div#3;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#3;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#3;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#3;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#1;n#div#3;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#label#2;n#div#0;n#form#0;n#div#0;n#body#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,8 +56,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MatchingTool/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3720">
-              <caret line="248" column="21" selection-start-line="248" selection-start-column="21" selection-end-line="248" selection-end-column="21" />
+            <state relative-caret-position="5790">
+              <caret line="386" column="9" lean-forward="true" selection-start-line="235" selection-end-line="386" selection-end-column="9" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#body#1;n#html#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,7 +68,7 @@
       <file leaf-file-name="Q2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MatchingTool/templates/Q2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5520">
+            <state relative-caret-position="-835">
               <caret line="368" column="43" selection-start-line="368" selection-start-column="43" selection-end-line="368" selection-end-column="43" />
             </state>
           </provider>
@@ -64,8 +77,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MatchingTool/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="180">
+              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -73,8 +86,8 @@
       <file leaf-file-name="temp.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/temp.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="305">
+              <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -82,17 +95,26 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homepage/bootstrap-carousel-multiple-items/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="-63">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="result.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MatchingTool/templates/result.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard_bootstrap/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            <state relative-caret-position="112">
+              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -100,17 +122,17 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3060">
-              <caret line="204" column="1" selection-start-line="204" selection-start-column="1" selection-end-line="204" selection-end-column="1" />
+            <state relative-caret-position="380">
+              <caret line="207" selection-start-line="207" selection-end-line="207" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MatchingTool/static/js/script.js">
+      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1410">
-              <caret line="94" column="68" selection-start-line="94" selection-start-column="68" selection-end-line="94" selection-end-column="68" />
+            <state relative-caret-position="75">
+              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -133,6 +155,7 @@
       <find>buy a car</find>
       <find>find</find>
       <find>modal</find>
+      <find>button</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -151,12 +174,13 @@
         <option value="$PROJECT_DIR$/MatchingTool/templates/result.html" />
         <option value="$PROJECT_DIR$/Homepage/bootstrap-carousel-multiple-items/index.html" />
         <option value="$PROJECT_DIR$/MatchingTool/app.py" />
-        <option value="$PROJECT_DIR$/MatchingTool/static/css/main.css" />
         <option value="$PROJECT_DIR$/MatchingTool/static/js/script.js" />
-        <option value="$PROJECT_DIR$/MatchingTool/templates/Q1.html" />
-        <option value="$PROJECT_DIR$/MatchingTool/static/css/temp.css" />
         <option value="$PROJECT_DIR$/MatchingTool/templates/Q2.html" />
         <option value="$PROJECT_DIR$/MatchingTool/templates/index.html" />
+        <option value="$PROJECT_DIR$/MatchingTool/static/css/main.css" />
+        <option value="$PROJECT_DIR$/MatchingTool/static/css/login.css" />
+        <option value="$PROJECT_DIR$/MatchingTool/static/css/temp.css" />
+        <option value="$PROJECT_DIR$/MatchingTool/templates/Q1.html" />
       </list>
     </option>
   </component>
@@ -199,6 +223,19 @@
               <item name="SobaDev_ConsumerAffairs" type="b2602c69:ProjectViewProjectNode" />
               <item name="SobaDev_ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
               <item name="MatchingTool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SobaDev_ConsumerAffairs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SobaDev_ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
+              <item name="MatchingTool" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SobaDev_ConsumerAffairs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SobaDev_ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
+              <item name="MatchingTool" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SobaDev_ConsumerAffairs" type="b2602c69:ProjectViewProjectNode" />
@@ -288,7 +325,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="23" width="1244" height="777" extended-state="6" />
+    <frame x="36" y="23" width="1244" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -298,7 +335,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.35159817" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32763532" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2778702" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26039934" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -344,13 +381,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MatchingTool/templates/Q1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3600">
-          <caret line="240" column="109" selection-start-line="240" selection-start-column="109" selection-end-line="240" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3060">
@@ -565,20 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MatchingTool/templates/result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3060">
-          <caret line="204" column="1" selection-start-line="204" selection-start-column="1" selection-end-line="204" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MatchingTool/static/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1410">
@@ -586,52 +602,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MatchingTool/templates/Q1.html">
+    <entry file="file://$PROJECT_DIR$/MatchingTool/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4125">
-          <caret line="275" column="37" selection-start-line="275" selection-start-column="12" selection-end-line="275" selection-end-column="37" />
+        <state relative-caret-position="180">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Homepage/bootstrap-carousel-multiple-items/index.html">
+    <entry file="file://$PROJECT_DIR$/MatchingTool/templates/result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/temp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MatchingTool/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3720">
-          <caret line="248" column="21" selection-start-line="248" selection-start-column="21" selection-end-line="248" selection-end-column="21" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MatchingTool/templates/Q2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5520">
+        <state relative-caret-position="-835">
           <caret line="368" column="43" selection-start-line="368" selection-start-column="43" selection-end-line="368" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MatchingTool/app.py">
+    <entry file="file://$PROJECT_DIR$/MatchingTool/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="5790">
+          <caret line="386" column="9" lean-forward="true" selection-start-line="235" selection-end-line="386" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#body#1;n#html#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homepage/bootstrap-carousel-multiple-items/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard_bootstrap/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        <state relative-caret-position="112">
+          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="207" selection-start-line="207" selection-end-line="207" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/temp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MatchingTool/templates/Q1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="213" column="22" selection-start-line="213" selection-start-column="22" selection-end-line="213" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#label#2;n#div#0;n#form#0;n#div#0;n#body#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

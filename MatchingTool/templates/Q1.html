@@ -7,6 +7,7 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
                 <link rel="stylesheet" href="{{ url_for('static', filename='css/temp.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 
       <!--<script src="{{url_for('static',filename='js/JavaScript.js')}}"></script>-->
 <script src="{{url_for('static',filename='js/script.js')}}"></script>
@@ -205,12 +206,12 @@
 <p class="js-title-description questionflow__title-dsc" style="box-sizing: border-box; color: rgb(0, 0, 0); font-weight: 400; font-size: 1.5rem; text-align: left; width: 511.188px; margin-top: 2rem; margin-bottom: 1rem; font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">What is your Zip Code?</p>
               <p class="js-title js-checkbox-title questionflow__chkbx-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px 0px; color: rgb(149, 149, 149); font-weight: 400; font-size: 1.0rem;">Not all companies offer services in all states. We'll match you with a company in your area.</p>
 
-<div class="js-form-group js-form-checkbox questionflow__checkbox-group" style="box-sizing: border-box; width: 511.188px; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-  <!--<p class="js-title js-checkbox-title questionflow__chkbx-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px 0px; text-align: center; color: rgb(149, 149, 149); font-weight: 400; font-size: 1.5rem;">Select all that apply</p>-->
-</div>
+{#<div class="js-form-group js-form-checkbox questionflow__checkbox-group" style="box-sizing: border-box; width: 511.188px; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">#}
+{#  <!--<p class="js-title js-checkbox-title questionflow__chkbx-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px 0px; text-align: center; color: rgb(149, 149, 149); font-weight: 400; font-size: 1.5rem;">Select all that apply</p>-->#}
+{#</div>#}
 
 <!--<input class="zip-group__input js-input js-zip-type js-geo-prefilled js-valid-zip" type="text" name="zip" value="Zip Code" data-type="string" data-group="" placeholder="" required="" minlength="">-->
-<input type="text" name="textbox1" value="ZIP CODE" id="zipcodebox" />
+      <input type="zip" placeholder="Enter Zip Code">
 <p></p>
 {#<button type="button" onclick="myFunction7()"class="btn btn-primary btn-lg" >check</button>#}
 <button type="button" onclick="myFunction4toR(), myFunction7(), myFunction8()" class="btn btn-primary btn-lg" >Continue</button>
@@ -240,7 +241,7 @@
 <p></p>
         <div  style = "text-align: center; margin-bottom: 15px" >
             <!--<a class=“login-trigger” href=“#” data-target=“#login” data-toggle=“modal”>Login</a> -->
-           <button type="button" onclick="openForm()" class="btn btn-primary btn-lg" >SHOW ME MY MATCH</button>
+           <button type="button" onclick="document.getElementById('id01').style.display='block', document.getElementById('id02').style.display='none'" class="btn btn-primary btn-lg" >SHOW ME MY MATCH</button>
 
 <!-- <button type="button" onclick="location.href='/result'"class="btn btn-primary btn-lg" >SHOW ME MATCH</button> -->
         </div>
@@ -339,6 +340,158 @@ function myFunction4toR() {
 
 }
 function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<body>
+
+{#<h2>Modal Signup Form</h2>#}
+{##}
+{#<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>#}
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+
+   <h1><button onclick="document.getElementById('id01').style.display='block', document.getElementById('id02').style.display='none'" class="cancelbtn1">Sign Up</button>
+        <button type="submit" onclick="document.getElementById('id02').style.display='block', document.getElementById('id01').style.display='none'" class="signupbtn1">Login</button></h1>
+    <p align="center">Please fill in this form to create an account.</p>
+      <hr>
+{#        <label for="first name"><b></b></label>#}
+{#      <input type="text" placeholder="Enter First Name" name="first" required>#}
+{#         <label for="last name"><b></b></label>#}
+{#      <input type="text" placeholder="Enter Last Name" name="last" required>#}
+{##}
+{##}
+{#        <label for="phone"><b></b></label>#}
+{#      <input type="text" placeholder="Enter Phone Number" name="phone" required>#}
+{##}
+{#      <label for="email"><b></b></label>#}
+{#      <input type="text" placeholder="Enter Email" name="email" required>#}
+{##}
+{#      <label for="psw"><b></b></label>#}
+{#      <input type="password" placeholder="Enter Password" name="psw" required>#}
+{##}
+{#      <label for="psw-repeat"><b></b></label>#}
+{#      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>#}
+
+                <form>
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Enter First Name" required>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Enter Last Name" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Enter Phone Number" required>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Enter Email" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Enter Password" required>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Repeat Password" required>
+    </div>
+  </div>
+</form>
+
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+{#          <button onclick="document.getElementById('id02').style.display='block', document.getElementById('id01').style.display='none'" type="submit" class="loginbtn">Already have a account? Login</button>#}
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+
+<body>
+
+{#<h2>Modal Login Form</h2>#}
+{##}
+{#<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"> Login </button>#}
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+
+           <h1><button onclick="document.getElementById('id01').style.display='block', document.getElementById('id02').style.display='none'" class="cancelbtn2">Sign Up</button>
+        <button type="submit" onclick="document.getElementById('id02').style.display='block', document.getElementById('id01').style.display='none'" class="signupbtn2">Login</button></h1>
+
+      <p align="center">Please log in your account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Login</button>
+{#          <button onclick="document.getElementById('id01').style.display='block', document.getElementById('id02').style.display='none'" type="submit" class="loginbtn">Do not have an account? Sign up</button>#}
+
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+<script>
+    function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
 
