@@ -18,7 +18,7 @@
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 50px;
+  bottom: 10px;
   right: 452px;
   border: 3px solid #f1f1f1;
   z-index: 9;
