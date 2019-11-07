@@ -21,15 +21,27 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Buyers Guide<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#" style = "margin-right: 10px">Buyers Guide<span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item" style = "margin-right: 10px">
                     <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item" style = "margin-right: 10px">
+                    <a class="nav-link" href="#">Dashboard</a>
+                  </li>
+                  <li class="nav-item" style = "margin-right: 10px">
+                    <a class="nav-link" href="#">About Us</a>
                   </li>
                 </ul>
                   <ul class = "navbar-nav ml-auto">
                       <li class="nav-link">
                           <a class= "nav-link" href="#"><img src="img/user_account.png" style="margin: -5px;width: 16rem; height: 4.6rem;"></a>
+                      </li>
+                       <li class="nav-link">
+                          <a class= "nav-link" href="#" style = "margin-top: 7px; display:none" onclick = login()>LOG IN</a>
+                           <script>
+
+                           </script>
                       </li>
                       <li class="nav-link">
                         <a class="nav-item" style="padding-top: 12px; padding-right: 15px; padding-left: 5px;" onclick = "searchClick()" href="#"><span class="glyphicon glyphicon-search"></span></a>
@@ -63,9 +75,9 @@
                         <div class ="row">
                             <div class="todo container-fluid">
                                 <div class="row">
-                                    <div class="card todo-content" style="margin-top:15px; font-family: Helvetica;">
-                                        <div class="card-footer" style="background-color:#f46401;">
-                                            <h2 style="text-align:center;">To-Do List</h2>
+                                    <div class="card todo-content" style="margin-top:15px; font-family: Helvetica; height: 300px">
+                                        <div class="card-footer" style="background-color:#0177c0;">
+                                            <h2 style="text-align:center; color:white; font-size: 20px;">To-Do List</h2>
                                         </div>
                                         <div class="d-flex flex-column p-4 bd-highlight">
                                             <ul id=todolist class="list-group list-group-flush">
@@ -127,7 +139,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-sm-3">
-                                                <a href="#" class="custom-card">
+                                                <a href="https://www.consumeraffairs.com/online/credit-report/" class="custom-card">
                                                     <div class="card" style="width: 16rem; height: 15rem; border-radius:10px;">
                                                         <img style="border-top-left-radius:10px; border-top-right-radius:10px;" class="card-img-top" alt="Card header image"
                                                              src="css/img/Credit_Cards.png">
@@ -138,7 +150,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-sm-3">
-                                                <a href="#" class="custom-card">
+                                                <a href="https://www.consumeraffairs.com/finance/invest.html" class="custom-card">
                                                     <div class="card" style="width: 16rem; height: 15rem; border-radius:10px;">
                                                         <img style="border-top-left-radius:10px; border-top-right-radius:10px;" class="card-img-top" alt="Card header image"
                                                              src="css/img/investing.png">
@@ -149,7 +161,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-sm-3">
-                                                <a href="#" class="custom-card">
+                                                <a href="https://www.consumeraffairs.com/automotive/car-models/" class="custom-card">
                                                     <div class="card" style="width: 16rem; height: 15rem; border-radius:10px;">
                                                         <img style="border-top-left-radius:10px; border-top-right-radius:10px;" class="card-img-top" alt="Card header image"
                                                              src="css/img/buycar.png">
