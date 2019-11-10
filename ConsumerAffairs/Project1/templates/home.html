@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive search input: using JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='custom.css') }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='custom1.css') }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='carousel.css') }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.2.26/jquery.autocomplete.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- partial:index.partial.html -->
+
+<div>
+  <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#"><span><img src="static/img/ca_logoh.png" style="width: 22rem; height: 4rem;"></span></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#" style = "margin-right: 10px">Buyers Guide<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item" style = "margin-right: 10px">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item" style = "margin-right: 10px">
+                    <a class="nav-link" href="#">Dashboard</a>
+                  </li>
+                  <li class="nav-item" style = "margin-right: 10px">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                </ul>
+                  <ul class = "navbar-nav ml-auto">
+                      <li class="nav-link">
+                          <a class= "nav-link" href="#"><img src="static/img/user_accounth.png" style="margin: -5px;width: 12rem; height: 4.6rem;"></a>
+                      </li>
+                       <li class="nav-link">
+                          <a class= "nav-link" href="#" style = "margin-top: 7px; display:none" onclick = login()>LOG IN</a>
+                           <script>
+                           </script>
+                      </li>
+                      <li class="nav-link">
+                        <a class="nav-item" style="padding-top: 12px; padding-right: 15px; padding-left: 5px;" onclick = "searchClick()" href="#"><span class="glyphicon glyphicon-search"></span></a>
+                      </li>
+                      <li class="nav-link">
+                          <button class="btn1 btn-outline-success my-2 my-sm-0" type="submit">WRITE A REVIEW</button>
+                      </li>
+                  </ul>
+              </div>
+            </nav>
+
+
+            <!-- <div>
+              <h1>For life's important purchases </h1>
+            </div> -->
+            <div id="search">
+              <div>
+                <form  method="POST" action='/result'>
+                <input style= "color:black" type="text" name="comp_select" id="search_text" placeholder="Search"/>
+                <input type="submit">
+                </form>
+              </div>
+            </div>
+              <!-- Top content -->
+                  <div class="top-content">
+                  	<div class="container-fluid">
+                  		<div id="carousel-example" class="carousel slide" data-ride="carousel">
+                  			<div class="carousel-inner row w-100 mx-auto" role="listbox">
+                      			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+          								<div class="card">
+          										<img class="card-img-top img-fluid" src= "{{found[0][1][1]}}" alt="Card image cap">
+          										<div class="card-body">
+          											<a href="{{found[0][1][0]}}"><h2 class="card-title">{{found[0][0]}}</h2></a>
+          										</div>
+          									  </div>
+          						</div>
+          						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+          								<div class="card">
+          										<img class="card-img-top img-fluid" src="{{found[1][1][1]}}" alt="Card image cap">
+          										<div class="card-body">
+          											<a href="{{found[1][1][0]}}"> <h2 class="card-title">{{found[1][0]}}</h2> </a>
+          										</div>
+          									  </div>
+          						</div>
+          						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+          								<div class="card">
+          										<img class="card-img-top img-fluid" src="{{found[2][1][1]}}" alt="Card image cap">
+          										<div class="card-body">
+          											<a href="{{found[2][1][0]}}"> <h2 class="card-title">{{found[2][0]}}</h2> </a>
+          										</div>
+          									  </div>
+          						</div>
+          						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+          								<div class="card">
+          										<img class="card-img-top img-fluid" src="{{found[3][1][1]}}" alt="Card image cap">
+          										<div class="card-body">
+          										  <a href="{{found[3][1][0]}}"> <h2 class="card-title">{{found[3][0]}}</h2> </a>
+          										</div>
+          									  </div>
+          						</div>
+          						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+          								<div class="card">
+          										<img class="card-img-top img-fluid" src="{{found[4][1][1]}}" alt="Card image cap">
+          										<div class="card-body">
+          											<a href="{{found[4][1][0]}}"> <h2 class="card-title">{{found[4][0]}}</h2> </a>
+          										</div>
+          									  </div>
+          						</div>
+          						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+          								<div class="card">
+          										<img class="card-img-top img-fluid" src="{{found[5][1][1]}}" alt="Card image cap">
+          										<div class="card-body">
+          											<a href="{{found[5][1][0]}}"> <h2 class="card-title">{{found[5][0]}}</h2> </a>
+          										</div>
+          									  </div>
+          						</div>
+          						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+          							<div class="card">
+          									<img class="card-img-top img-fluid" src="{{found[6][1][1]}}" alt="Card image cap">
+          									<div class="card-body">
+          										<a href="{{found[6][1][0]}}"> <h2 class="card-title">{{found[6][0]}}</h2> </a>
+          									</div>
+          							</div>
+          						</div>
+          						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+          							<div class="card">
+          									<img class="card-img-top img-fluid" src="{{found[7][1][1]}}" alt="Card image cap">
+          									<div class="card-body">
+          										<a href="{{found[7][1][0]}}"> <h2 class="card-title">{{found[7][0]}}</h2> </a>
+          									</div>
+          									</div>
+          						</div>
+          ​
+                  			</div>
+                  			<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+          						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          						<span class="sr-only">Previous</span>
+          					</a>
+          					<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+          						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+          						<span class="sr-only">Next</span>
+          					</a>
+                  		</div>
+                  	</div>
+                  </div>
+<!-- <div id = "searchbox">
+<form method="POST" action='/result'>
+    <input name="comp_select" id = "autocomplete1" >
+    <input type="submit">
+</form> -->
+
+
+<!--
+
+<div id="search">
+  <form class="example" method="GET" action="#">
+  <input type="text" autocomplete="on" id="autocomplete1" name="autocomplete1" placeholder="Categories">
+  <button type="submit" id = "submit1"><svg viewbox="0 0 24 24">
+    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+    <path d="M0 0h24v24H0z" fill="none">
+  </svg>
+</button>
+
+</form>
+</div> -->
+
+<!--
+<form method="POST">
+<div id= "search">
+  <input aria-label="Search" autocomplete="on" id="autocomplete1" name="autocomplete1" placeholder="Categories" speech type="search">
+  <button type = "submit">
+  <svg viewbox="0 0 24 24">
+    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+    <path d="M0 0h24v24H0z" fill="none">
+  </svg>
+</button>
+</div>
+</form> -->
+
+  <script>
+  $('#search_text').autocomplete({
+      serviceUrl: '/search/names',
+      dataType: 'json',
+      onSearchComplete: function (query, suggestions) {
+        console.log(query);
+      }
+  });
+
+  </script>
+</body>

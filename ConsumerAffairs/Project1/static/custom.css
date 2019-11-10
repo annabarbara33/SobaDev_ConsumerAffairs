@@ -1,0 +1,119 @@
+html {
+  height: 100%;
+}
+
+body {
+
+  background-image:
+  url("https://www.consumeraffairs.com/static/img/five-homepage/homepage_hero1440x600px.jpg");
+  /* align-items: center;
+  display: grid;
+  height: calc(100% - 50px);
+  justify-items: center;
+  padding: 20px 75px; */
+
+}
+#search {
+  display: grid;
+  justify-items: center;
+  width: 357px;
+  margin-right: auto !important;
+  margin-left: 500px !important;
+  margin-top : 250px !important;
+  margin-bottom: 150px !important;
+}
+
+#search_text{
+  width: 297px;
+  padding: 15px 0 15px 20px;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  border: 0 none;
+  height: 52px;
+  margin-right: 0;
+  color: white;
+  outline: none;
+  background: #FFF;
+  float: left;
+  box-sizing: border-box;
+  transition: all 0.15s;
+}
+
+div #searchbox *{
+  display: grid;
+  height: calc(100% - 50px);
+  justify-items: center;
+  padding: 20px 75px;
+}
+
+
+
+div#search * {
+  font-family: sans-serif;
+}
+
+div#search {
+  align-items: center;
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+}
+
+div#search label {
+  display: none;
+  font-weight: 500;
+  margin: 0 5px 0 0;
+}
+
+div#search input {
+  border: solid #ccc;
+  border-width: 1px 0 1px 1px;
+  border-radius: 2px 0 0 2px;
+  flex: 1;
+  font-size: 16px;
+  font-weight: 200;
+  height: 33px;
+  margin: 0;
+  min-width: 90px;
+  padding: 5px;
+  -webkit-appearance: textfield;
+}
+
+div#search svg {
+  background-color: #085c90;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  fill: white;
+  height: 33px;
+  min-width: 24px;
+  padding: 0 7px;
+  width: 24px;
+}
+
+div#search svg:hover {
+  background-color:#085c90;
+  fill: white;
+}
+
+#submit1{
+  width: 0;  height: 0em;
+}
+div#submit1 svg {
+  background-color: #085c90;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  fill: white;
+  height: 33px;
+  min-width: 24px;
+  padding: 0 7px;
+  width: 24px;
+
+
+@media all and (min-width: 500px) {
+  div#search label {
+    display: inline;
+  }
+  div#search input::placeholder {
+    opacity: 0;
+  }
+}
