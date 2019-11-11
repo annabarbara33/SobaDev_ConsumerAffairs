@@ -287,18 +287,29 @@ hr {
 
   <div class="form-row">
     <div class="col">
-      <input type="text" class="form-control" placeholder="Enter Password" required>
+      <input type="password" class="form-control" placeholder="Enter Password" required>
     </div>
     <div class="col">
-      <input type="text" class="form-control" placeholder="Repeat Password" required>
+      <input type="password" class="form-control" placeholder="Repeat Password" required>
     </div>
   </div>
 </form>
+        <select class="custom-select" name="report_items" data-type="string" data-group="" required="">
+                    <option value="">Are you currently going though any of these life changes?</option>
+                    <option value="lc1">Graduate high school</option>
+                    <option value="lc2">First full time job</option>
+                    <option value="lc3">Becoming financially independent</option>
+                    <option value="lc4">Moving in with a partner</option>
+                    <option value="lc5">First child</option>
+                     <option value="lc6">Switch jobs</option>
+                     <option value="lc7">Going through health problems</option>
+                     <option value="lc8">None of the above</option>
+    </select>
 
 
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
+{#      <label>#}
+{#        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me#}
+{#      </label>#}
 
       <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 

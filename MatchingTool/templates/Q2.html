@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
                 <link rel="stylesheet" href="{{ url_for('static', filename='css/temp.css') }}">
 
+
       <!--<script src="{{url_for('static',filename='js/JavaScript.js')}}"></script>-->
 <script src="{{url_for('static',filename='js/script.js')}}"></script>
   <title>ConsumerAffairs.com/</title>
@@ -81,7 +82,7 @@
   <label class="custom-control-label" for="customCheck4">Not Sure/ Other</label>
 <p></p>
 </div>
-    <button type="button" onclick="myFunction1to2()"class="btn btn-primary btn-lg" >Continue</button>
+    <button type="button" onclick="myFunction1to2()"class="btn btn-primary btn-lg black-background white" >Continue</button>
     </div>
 
 
@@ -142,7 +143,7 @@
 
 {#<button type="button" onclick="myFunction5()"class="btn btn-primary btn-lg" >check</button>#}
 <p></p>
-<button type="button" onclick="myFunction2to3() , myFunction5()"class="btn btn-primary btn-lg" >Continue</button>
+<button type="button" onclick="myFunction2to3() , myFunction5()"class="btn btn-primary btn-lg black-background white" >Continue</button>
 </div>
     </div>
 </div>
@@ -182,7 +183,7 @@
 <p></p>
 
 {#    <button type="button" onclick="myFunction6()"class="btn btn-primary btn-lg" >check</button>#}
-<button type="button" onclick="myFunction3to4(), myFunction6()"class="btn btn-primary btn-lg" >Continue</button>
+<button type="button" onclick="myFunction3to4(), myFunction6()"class="btn btn-primary btn-lg black-background white" >Continue</button>
 </div>
 </div>
 
@@ -213,7 +214,7 @@
 <input type="text" name="textbox1" value="ZIP CODE" id="zipcodebox" />
 <p></p>
 {#<button type="button" onclick="myFunction7()"class="btn btn-primary btn-lg" >check</button>#}
-<button type="button" onclick="myFunction4toR(), myFunction7(), myFunction8()" class="btn btn-primary btn-lg" >Continue</button>
+<button type="button" onclick="myFunction4toR(), myFunction7(), myFunction8()" class="btn btn-primary btn-lg black-background white" >Continue</button>
     </div>
     </div>
 
@@ -342,15 +343,17 @@
 
 
         <form>
-               <p></p>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Create an account for personalize experience</label>
-  </div>
+{#               <p></p>#}
+{#  <div class="form-group form-check">#}
+{#    <input type="checkbox" class="form-check-input" id="exampleCheck1">#}
+{#    <label class="form-check-label" for="exampleCheck1">Create an account for personalize experience</label>#}
+{#  </div>#}
 </form>
         <p></p>
         <div  style = "text-align: center; margin-bottom: 15px" >
-            <button type="button" onclick="openForm()"class="btn btn-primary btn-lg" >SHOW ME MY MATCH</button>
+            <button type="button" onclick="openForm()"class="btn btn-primary btn-lg black-background white"  >Continue as Guest</button>
+            <button type="button" onclick="openForm()" class="btn btn-primary btn-lg black-background white"  >Create an account</button>
+
 
 <!-- <button type="button" onclick="location.href='/result'"class="btn btn-primary btn-lg" >SHOW ME MATCH</button> -->
         </div>

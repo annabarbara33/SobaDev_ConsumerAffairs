@@ -67,3 +67,36 @@
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+.btn1 {
+  background-color: #0177c0;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 3px;
+  font-family: Arial;
+  -webkit-font-smoothing: antialiased;
+}
+.btn2 {
+    background-color: #0177c0;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      letter-spacing: 1px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      display: table-cell;
+      font-size: 14px;
+      border-radius: 3px;
+      font-family: Arial;
+    vertical-align: bottom;
+
+}
+.black-background {background-color:#0177c0;}
+.white {color:#ffffff;}
