@@ -124,8 +124,11 @@ def trail():
                                             ]
                                     }
 
-    given = ["FHA LOAN LENDERS","MOTORCYCLE INSURANCE","BACKGROUND CHECK COMPANIES"]
+    given = ["African Safari Tour","ANNUITIES"]
     print(ls)
+
+    if ls:
+        given.extend(ls)
 
     found = []
     for key,values in categories.items():
@@ -133,7 +136,7 @@ def trail():
                 for i in given:
                         if i in cats:
                                 found.extend(cats)
-
+    print(type(given))
     for key,values in categories.items():
         for i in given:
                 if i in values.keys():

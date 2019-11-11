@@ -4,9 +4,20 @@ from data import *
 from flask import Flask, request, render_template, jsonify,redirect
 import categories
 from categories import *
+import insert_db
+from insert_db import insert_data
+from insert_db import select
+
 app = Flask(__name__)
 
-ls = ["FHA LOAN LENDERS","MOTORCYCLE INSURANCE","BACKGROUND CHECK COMPANIES","AUTO LOANS"]
+#ls = ["FHA LOAN LENDERS","MOTORCYCLE INSURANCE","BACKGROUND CHECK COMPANIES","AUTO LOANS"]
+
+ls = []
+row  = select()
+if len(row) != 0:
+    for i in row:
+        ls.extend(list(i))
+
 
 @app.route("/")
 def index():
@@ -26,8 +37,9 @@ def result():
     print("helloworld")
     select = request.form.get('comp_select')
     dict= {'Travel Insurance': 'https://www.consumeraffairs.com/insurance/travel-insurance/', 'FHA LOAN LENDERS':"https://www.consumeraffairs.com/finance/fha-loans/","SECURED CREDIT CARDS":"https://www.consumeraffairs.com/finance/credit-cards/secured/","BACKGROUND CHECK COMPANIES":"https://www.consumeraffairs.com/online/background-check/"}
-    ls.append(select)
-    print(ls)
+    insert_data(select)
+    #ls.append(select)
+    #print(ls)
     return redirect(dict[select])
 
 
