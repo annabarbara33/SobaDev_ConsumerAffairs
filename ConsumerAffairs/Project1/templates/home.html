@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='custom1.css') }}"/>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='carousel.css') }}"/>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}"/>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
@@ -17,6 +18,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -46,10 +50,10 @@
                 </ul>
                   <ul class = "navbar-nav ml-auto">
                       <li class="nav-link">
-                          <a class= "nav-link" href="#"><img src="static/img/user_accounth.png" style="margin: -5px;width: 12rem; height: 4.6rem;"></a>
+                          <a class= "nav-link" href="#" style = "display: none" ><img src="static/img/user_accounth.png" style="margin: -5px;width: 12rem; height: 4.6rem;"></a>
                       </li>
                        <li class="nav-link">
-                          <a class= "nav-link" href="#" style = "margin-top: 7px; display:none" onclick = login()>LOG IN</a>
+                          <a class= "nav-link" href="#" style = "margin-top: 7px; display:block" onclick="document.getElementById('id02').style.display='block',document.getElementById('id01').style.display='none'">LOG IN</a>
                            <script>
                            </script>
                       </li>
@@ -64,17 +68,29 @@
             </nav>
 
 
+
+
             <!-- <div>
               <h1>For life's important purchases </h1>
             </div> -->
+            <div>
+              <img class="center-block" style = "height: 190px; width: 625px; display:block; margin:auto; margin-top: 100px;" src="../static/img/Homepage1.png"/>
+            </div>
             <div id="search">
               <div>
                 <form  method="POST" action='/result'>
                 <input style= "color:black" type="text" name="comp_select" id="search_text" placeholder="Search"/>
-                <input type="submit">
+                <!--<a><img name = "submit" style = "height: 30px; width: 35px; margin-top: 3px;" src="../static/img/searchQ.png"></a> -->
+                <!--<input type="submit"> -->
+                <button type="submit" style="border: 0; background: transparent">
+                <img src="../static/img/searchQ.png" width="35px" height="30px" alt="submit" />
+                </button>
+                <!--<input type="image"   margin-top:"3px"  alt="Submit Form" /> -->
                 </form>
               </div>
             </div>
+
+
               <!-- Top content -->
                   <div class="top-content">
                   	<div class="container-fluid">
@@ -157,6 +173,139 @@
                   		</div>
                   	</div>
                   </div>
+
+
+<!-- Shiqiao code in this email -->
+
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+
+   <h1><button onclick="document.getElementById('id01').style.display='block', document.getElementById('id02').style.display='none'" class="cancelbtn1">Sign Up</button>
+        <button type="submit" onclick="document.getElementById('id02').style.display='block', document.getElementById('id01').style.display='none'" class="signupbtn1">Login</button></h1>
+    <p align="center">Please fill in this form to create an account.</p>
+      <hr>
+
+  <form>
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Enter First Name" required>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Enter Last Name" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Enter Phone Number" required>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Enter Email" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Enter Password" required>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Repeat Password" required>
+    </div>
+  </div>
+</form>
+
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+{#          <button onclick="document.getElementById('id02').style.display='block', document.getElementById('id01').style.display='none'" type="submit" class="loginbtn">Already have a account? Login</button>#}
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+
+<body>
+
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+
+           <h1><button onclick="document.getElementById('id01').style.display='block', document.getElementById('id02').style.display='none'" class="cancelbtn2">Sign Up</button>
+        <button type="submit" onclick="document.getElementById('id02').style.display='block', document.getElementById('id01').style.display='none'" class="signupbtn2">Login</button></h1>
+
+      <p align="center">Please log in your account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Login</button>
+
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+</html>
+<script>
+    function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+
 <!-- <div id = "searchbox">
 <form method="POST" action='/result'>
     <input name="comp_select" id = "autocomplete1" >
@@ -200,7 +349,7 @@
       }
   });
 </script>
-  
+
 
 
 </body>

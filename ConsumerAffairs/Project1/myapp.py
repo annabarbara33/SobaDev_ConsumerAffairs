@@ -29,7 +29,7 @@ def index():
 def process(box):
     query = request.args.get('query')
     if box == 'names':
-        suggestions = [{'value': 'Travel Insurance','data': 'Travel Insurance'}, {'value': 'FHA LOAN LENDERS','data': 'FHA LOAN LENDERS'},{'value': 'SECURED CREDIT CARDS','data': 'SECURED CREDIT CARDS'},{'value': 'BACKGROUND CHECK COMPANIES','data': 'BACKGROUND CHECK COMPANIES'} ]
+        suggestions = [{'value': 'TRAVEL INSURANCE','data': 'Travel Insurance'}, {'value': 'FHA LOAN LENDERS','data': 'FHA LOAN LENDERS'},{'value': 'SECURED CREDIT CARDS','data': 'SECURED CREDIT CARDS'},{'value': 'BACKGROUND CHECK COMPANIES','data': 'BACKGROUND CHECK COMPANIES'} ]
     return jsonify({"suggestions":suggestions})
 
 @app.route("/result" , methods=['GET', 'POST'])
