@@ -124,7 +124,7 @@ def trail():
                                             ]
                                     }
 
-    given = ["African Safari Tour","ANNUITIES"]
+    given = ["African Safari Tour","APPLIANCE STORES"]
     print(ls)
 
     if ls:
@@ -150,11 +150,19 @@ def trail():
     x = found
     images  = defaultdict()
     # 0 of the list is the link to the page and 1 is image link
-    images = {"African Safari Tour":["https://www.consumeraffairs.com/travel/african-safari-tours",""],
-        "CHINA TOURS COMPANIES":["https://www.consumeraffairs.com/travel/china-tours",""],
-        "RIVER CRUISE LINES":["https://www.consumeraffairs.com/travel/river-cruises",""],
-        "AMUSEMENT PARKS":["https://www.consumeraffairs.com/travel/amusement-parks",""],
-        "CRUISE LINES":["https://www.consumeraffairs.com/travel/cruises.html",""],
+    images = {"African Safari Tour":["https://www.consumeraffairs.com/travel/african-safari-tours","static/img/AfricanSafariTour.jpg"],
+        "CHINA TOURS COMPANIES":["https://www.consumeraffairs.com/travel/china-tours","static/img/CHINA_TOURS_COMPANIES.jpg"],
+        "RIVER CRUISE LINES":["https://www.consumeraffairs.com/travel/river-cruises","static/img/RIVER_CRUISE_LINES.jpg"],
+        "AMUSEMENT PARKS":["https://www.consumeraffairs.com/travel/amusement-parks","static/img/AMUSEMENT_PARKS.jpg"],
+        "CRUISE LINES":["https://www.consumeraffairs.com/travel/cruises.html","static/img/CRUISE_LINES.jpeg"],
+        "APPLIANCE STORES":["https://www.consumeraffairs.com/homeowners/appliance-retailers/","static/img/APPLIANCE_STORES.jpg"],
+        "DEAL WEBSITES":["https://www.consumeraffairs.com/online/daily-deal-websites/","static/img/DEAL_WEBSITES.jpg"],
+        "FLOWER DELIVERY":["https://www.consumeraffairs.com/online/flower-delivery/","static/img/FLOWER_DELIVERY.jpg"],
+        "FURNITURE STORES":["https://www.consumeraffairs.com/furniture/aaa_national.html","static/img/furniture_store.jpg"],
+        "ONLINE BATHROOM FIXTURES AND PLUMBING":["https://www.consumeraffairs.com/homeowners/aaa_plumbing.html","static/img/ONLINE _BATHROOM_FIXTURES_AND_PLUMBING.jpeg"],
+        "ONLINE PHOTO PRINTING":["https://www.consumeraffairs.com/online-photo-printing/","static/img/ONLINE_PHOTO_PRINTING.jpg"],
+        "ONLINE SHOPPING WEBSITES":["https://www.consumeraffairs.com/online/online_sales.htm","static/img/ONLINE_SHOPPING_WEBSITES.jpg"],
+        "SHOES ONLINE":["https://www.consumeraffairs.com/online/shoes-online/","static/img/SHOES_ONLINE.jpeg"],
         "HOTEL BRANDS":["https://www.consumeraffairs.com/travel/hotels.html",""],
         "TIMESHARES":["https://www.consumeraffairs.com/travel/timeshares.html",""],
         "TRAVEL SITES":["https://www.consumeraffairs.com/travel/travel-sites",""],
@@ -183,14 +191,14 @@ def trail():
         "WATER DELIVERY SERVICES":["https://www.consumeraffairs.com/water-delivery-services",""],
         "GOLF CLUB BRANDS":["https://www.consumeraffairs.com/retail/golf-club-brands",""],
         "SPORTING GOODS STORES":["https://www.consumeraffairs.com/sporting-goods",""],
-        "DENTAL INSURANCE":["https://www.consumeraffairs.com/insurance/dental-insurance/",""],
-        "DISABILITY INSURANCE":["https://www.consumeraffairs.com/insurance/dis.html",""],
-        "HEALTH INSURANCE":["https://www.consumeraffairs.com/insurance/health.html","static/img/health.jpg"],
-        "LIFE INSURANCE COMPANIES":["https://www.consumeraffairs.com/insurance/life.html","static/img/LIFE_INSURANCE_COMPANIES.png"],
-        "LONG TERM CARE INSURANCE":["https://www.consumeraffairs.com/insurance/ltc.html","static/img/long_term_care_insurance.jpg"],
-        "MEDICARE SUPPLEMENTAL INSURANCE":["https://www.consumeraffairs.com/insurance/medicare-supplemental-insurance/","static/img/medicare_suplemental_insurance.jpg"],
-        "TRAVEL INSURANCE":["https://www.consumeraffairs.com/insurance/travel-insurance/","static/img/Travel Insurance.jpg"],
-        "VISION INSURANCE":["https://www.consumeraffairs.com/insurance/vision-insurance/","static/img/vision_insurance.jpg"],
+        "DENTAL INSURANCE":["https://www.consumeraffairs.com/insurance/dental-insurance/","ConsumerAffairs/Project1/static/img/DENTAL INSURANCE.png"],
+        "DISABILITY INSURANCE":["https://www.consumeraffairs.com/insurance/dis.html","ConsumerAffairs/Project1/static/img/DISABILITY INSURANCE.png"],
+        "HEALTH INSURANCE":["https://www.consumeraffairs.com/insurance/health.html","ConsumerAffairs/Project1/static/img/HEALTH INSURANCE.png"],
+        "LIFE INSURANCE COMPANIES":["https://www.consumeraffairs.com/insurance/life.html","ConsumerAffairs/Project1/static/img/LIFE INSURANCE COMPANIES.png"],
+        "LONG TERM CARE INSURANCE":["https://www.consumeraffairs.com/insurance/ltc.html","ConsumerAffairs/Project1/static/img/LONG TERM CARE INSURANCE.png"],
+        "MEDICARE SUPPLEMENTAL INSURANCE":["https://www.consumeraffairs.com/insurance/medicare-supplemental-insurance/","ConsumerAffairs/Project1/static/img/MEDICARE SUPPLEMENTAL INSURANCE.png"],
+        "TRAVEL INSURANCE":["https://www.consumeraffairs.com/insurance/travel-insurance/","ConsumerAffairs/Project1/static/img/TRAVEL INSURANCE.png"],
+        "VISION INSURANCE":["https://www.consumeraffairs.com/insurance/vision-insurance/","ConsumerAffairs/Project1/static/img/VISION INSURANCE.png"],
         "FLOOD INSURANCE":["https://www.consumeraffairs.com/insurance/flood-insurance/","static/img/flood_insurance.jpg"],
         "HOMEOWNERS INSURANCE":["https://www.consumeraffairs.com/insurance/home.html","static/img/homeowners_insurance.jpg"],
         "JEWELRY INSURANCE":["https://www.consumeraffairs.com/insurance/jewelry-insurance","static/img/jewelry_insurance.jpg"],
