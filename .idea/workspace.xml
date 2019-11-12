@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f2669ca-b999-40d3-b138-fba69fbcb8e1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsumerAffairs/Project1/categories.py" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerAffairs/Project1/categories.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/MatchingTool/templates/Q1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="111">
-              <caret line="233" column="33" lean-forward="true" selection-start-line="233" selection-start-column="33" selection-end-line="233" selection-end-column="33" />
+              <caret line="233" column="33" selection-start-line="233" selection-start-column="33" selection-end-line="233" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -42,8 +43,8 @@
       <file leaf-file-name="categories.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ConsumerAffairs/Project1/categories.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="164" column="111" selection-start-line="164" selection-start-column="111" selection-end-line="164" selection-end-column="111" />
+            <state relative-caret-position="1950">
+              <caret line="130" column="24" lean-forward="true" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -55,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/MatchingTool/templates/Q2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2600">
-              <caret line="371" column="43" lean-forward="true" selection-start-line="371" selection-start-column="43" selection-end-line="371" selection-end-column="43" />
+              <caret line="371" column="43" selection-start-line="371" selection-start-column="43" selection-end-line="371" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -75,24 +76,36 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
+      <file leaf-file-name="temp.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/temp.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DISABILITY INSURANCE.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ConsumerAffairs/Project1/static/img/DISABILITY INSURANCE.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="HEALTH INSURANCE.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConsumerAffairs/Project1/static/img/HEALTH INSURANCE.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="14" column="41" selection-end-line="160" selection-end-column="1" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="LONG TERM CARE INSURANCE.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConsumerAffairs/Project1/static/img/LONG TERM CARE INSURANCE.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="MEDICARE SUPPLEMENTAL INSURANCE.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConsumerAffairs/Project1/static/img/MEDICARE SUPPLEMENTAL INSURANCE.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="207" selection-start-line="207" selection-end-line="207" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -172,6 +185,39 @@
             <path>
               <item name="SobaDev_ConsumerAffairs" type="b2602c69:ProjectViewProjectNode" />
               <item name="SobaDev_ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SobaDev_ConsumerAffairs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SobaDev_ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
+              <item name="ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SobaDev_ConsumerAffairs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SobaDev_ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
+              <item name="ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
+              <item name="Project1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SobaDev_ConsumerAffairs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SobaDev_ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
+              <item name="ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
+              <item name="Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SobaDev_ConsumerAffairs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SobaDev_ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
+              <item name="ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
+              <item name="Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SobaDev_ConsumerAffairs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SobaDev_ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
+              <item name="ConsumerAffairs" type="462c0819:PsiDirectoryNode" />
+              <item name="Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SobaDev_ConsumerAffairs" type="b2602c69:ProjectViewProjectNode" />
@@ -292,11 +338,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16438356" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16438356" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.35159817" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32763532" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26827243" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26827243" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -462,20 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3105">
-          <caret line="207" selection-start-line="207" selection-end-line="207" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/temp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Homepage/bootstrap-carousel-multiple-items/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -524,13 +556,6 @@
     <entry file="file://$PROJECT_DIR$/ConsumerAffairs/Project1/static/img/LIFE INSURANCE COMPANIES.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ConsumerAffairs/Project1/insert_db.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -577,21 +602,42 @@
     <entry file="file://$PROJECT_DIR$/MatchingTool/templates/Q2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2600">
-          <caret line="371" column="43" lean-forward="true" selection-start-line="371" selection-start-column="43" selection-end-line="371" selection-end-column="43" />
+          <caret line="371" column="43" selection-start-line="371" selection-start-column="43" selection-end-line="371" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MatchingTool/templates/Q1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
-          <caret line="233" column="33" lean-forward="true" selection-start-line="233" selection-start-column="33" selection-end-line="233" selection-end-column="33" />
+          <caret line="233" column="33" selection-start-line="233" selection-start-column="33" selection-end-line="233" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/temp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="207" selection-start-line="207" selection-end-line="207" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MatchingTool/static/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="14" column="41" selection-end-line="160" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ConsumerAffairs/Project1/categories.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="164" column="111" selection-start-line="164" selection-start-column="111" selection-end-line="164" selection-end-column="111" />
+        <state relative-caret-position="1950">
+          <caret line="130" column="24" lean-forward="true" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>

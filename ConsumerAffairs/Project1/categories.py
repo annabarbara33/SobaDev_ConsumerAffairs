@@ -124,7 +124,7 @@ def trail():
                                             ]
                                     }
 
-    given = ["African Safari Tour","ANNUITIES"]
+    given = ["African Safari Tour","APPLIANCE STORES"]
     print(ls)
 
     if ls:
